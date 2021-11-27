@@ -33,3 +33,13 @@ In this project, _Python_ is used to explore data related to bike share systems 
     * _Python 3, NumPy,_ and _Pandas_ installed using _Anaconda_
     * A text editor, like _VS Code_ or _Atom_.
     * A terminal application (_Terminal_ on _Mac_ and _Linux_ or _Cygwin_ on _Windows_).
+
+    ## **Installation links for softwares:**
+    * [Git for windows - for terminal application using Git Bash](https://gitforwindows.org/)
+    * [Python using Anaconda (latest version for windows)](https://www.anaconda.com/distribution/)
+    * [Visual Studio Code Editor (for windows)](https://code.visualstudio.com/docs/setup/windows)
+
+    ## **Links for software tutorials:**
+    * [Git - Reference](https://git-scm.com/docs)
+    * [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
+    * [VS Code Documentation](https://code.visualstudio.com/docs)
