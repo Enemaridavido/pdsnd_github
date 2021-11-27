@@ -43,3 +43,15 @@ In this project, _Python_ is used to explore data related to bike share systems 
     * [Git - Reference](https://git-scm.com/docs)
     * [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
     * [VS Code Documentation](https://code.visualstudio.com/docs)
+
+    ## **Code explained in Detail:**
+    ### **How the program works:**
+    The code developed takes in raw input to create an interactive experience in the terminal that answers questions about the dataset. The experience is interactive because depending on a user's input, the answers to the questions will change! There are four questions that will change the answers:
+
+    * Which city would you like to explore? _Chicago_, _New York_, or _Washington_?
+    * Would the user like to filter the data by month, day, or all?
+    * (If they chose month) Which month - _january_, _february_, _march_, _april_, _may_, _J
+    june_ or _all_?
+    * (If they chose day) Which day - _monday_, _tuesday_, _wednesday_, _thursday_, _friday_, _saturday_, _sunday_ or _all_?
+
+    The answers to the questions above will determine the city and timeframe on which you'll do data analysis. After filtering the dataset, users will see the statistical result of the data, and choose to restart or exit.
