@@ -37,7 +37,7 @@ def get_filters():
         if month in ['january', 'february', 'march', 'april', 'may', 'june', 'all']:
             break
         else:
-            print("Sorry, Please enter a valid input")
+            print("Sorry, Please type a correct input")
     # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
         day = input("\nAre you looking for a particular day? If so, kindly enter the day as follows: sunday, monday, tuesday, wednesday, thursday, friday, saturday or type 'all' if you do not have any preference.\n")
@@ -45,7 +45,7 @@ def get_filters():
         if day in ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']:
             break
         else:
-            print("Sorry, Please enter a valid input")
+            print("Sorry, Please type a correct input")
     print('-'*40)
     return city, month, day
 
@@ -177,7 +177,7 @@ def user_stats(df, city):
         print(gender)
 
         # Display earliest, most recent, and most common year of birth
-        
+
         lets earliest_year by EY, most_recent_year be MRY, most_common_year be MCY
         EY = sorted(df.groupby(['Birth Year'])['Birth Year'])[0][0]
         MRY = sorted(df.groupby(['Birth Year'])['Birth Year'], reverse=True)[0][0]
