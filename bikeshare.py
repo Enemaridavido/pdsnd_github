@@ -37,15 +37,15 @@ def get_filters():
         if month in ['january', 'february', 'march', 'april', 'may', 'june', 'all']:
             break
         else:
-            print("Sorry, Please enter a valid input")
-    # obtain user input for days of the week (all, monday, tuesday, wednesday, thursday, friday, saturday & sunday)
+            print("Sorry, Please type a correct input")
+    # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
         day = input("\nAre you looking for a particular day? If so, kindly enter the day as follows: sunday, monday, tuesday, wednesday, thursday, friday, saturday or type 'all' if you do not have any preference.\n")
         day = day.lower()
         if day in ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']:
             break
         else:
-            print("Sorry, Please enter a valid input")
+            print("Sorry, Please type a correct input")
     print('-'*40)
     return city, month, day
 
@@ -178,12 +178,13 @@ def user_stats(df, city):
 
         # Display earliest, most recent, and most common year of birth
 
-        earliest_year= sorted(df.groupby(['Birth Year'])['Birth Year'])[0][0]
-        most_recent_year = sorted(df.groupby(['Birth Year'])['Birth Year'], reverse=True)[0][0]
-        most_common_year = df['Birth Year'].value_counts().idxmax()
-        print("The earliest year of birth is ", earliest_year, "\n")
-        print("The most recent year of birth is ", most_recent_year, "\n")
-        print("The most common year of birth is ", most_common_year, "\n")
+        lets earliest_year by EY, most_recent_year be MRY, most_common_year be MCY
+        EY = sorted(df.groupby(['Birth Year'])['Birth Year'])[0][0]
+        MRY = sorted(df.groupby(['Birth Year'])['Birth Year'], reverse=True)[0][0]
+        MCY = df['Birth Year'].value_counts().idxmax()
+        print("The earliest year of birth is ", EY, "\n")
+        print("The most recent year of birth is ", MRY, "\n")
+        print("The most common year of birth is ", MCY, "\n")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
